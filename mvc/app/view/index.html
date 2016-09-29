@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% if data|length > 0 %} 
+    <tr> 
+        {% for user in data %} 
+            <td>{{ user.name|e }}</td> 
+        {% endfor %} 
+    </tr> 
+{% endif %} 
+
+{% endblock %}
